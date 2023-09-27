@@ -1,0 +1,48 @@
+.studentmain{
+    display: flex;
+    width:100%;
+    padding-top: 65px;
+}
+.studentForm{
+    width:30%;
+    height: 600px;
+    background-color:orange;
+}
+.studentList{
+    width:70%;
+    height:600px;
+    background-color:red;
+}
+.Ravi{
+    text-align: center;
+}
+label{
+    width:150px;
+    margin:10px;
+    color:white;
+}
+.formdetails{
+    color:white;
+}
+th{
+    background-color: black;
+}
+tr:nth-child(odd){
+    background-color: black;
+}
+
+
+
+
+
+.formdetails{
+    text-align: center;
+}
+.userdetails{
+    width:100%;
+    text-align: center;
+    color:white;
+}
+tr{
+    border: 1px solid white;
+}

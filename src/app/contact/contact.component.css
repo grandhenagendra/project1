@@ -1,0 +1,53 @@
+.main {
+    padding-top: 66px;
+    display: flex;
+}
+
+h5 {
+    color: yellow;
+    text-align: center;
+}
+
+label {
+    width: 70px;
+    margin-top: 15px;
+}
+
+.contact-form {
+    background-color: coral;
+    color: white;
+    height: 600px;
+    width: 25%;
+
+}
+
+.contact-list {
+    background-color: mediumslateblue;
+    height: 600px;
+    width: 75%;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+tr {
+    background-color: green;
+    color: white;
+    height: 40px;
+}
+
+.field {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+tr:nth-child(even) {
+    background-color: red;
+}

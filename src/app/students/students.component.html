@@ -1,0 +1,64 @@
+<div class="studentmain">
+
+    <div class="studentForm">
+        <div class="formdetails"><h6>Student Forms</h6></div>
+    
+    <div class="forms-add">
+<div>
+    <label for="id">ID:</label>
+    <input type="text" name="id" [(ngModel)]="id"> 
+</div>
+<div>
+    <label for="name">Name:</label>
+    <input type="text" name="name" [(ngModel)]="name">
+</div>
+<div>
+    <label for="phone">Mobile:</label>
+    <input type="text" name="phone" [(ngModel)]="phone">
+</div>
+<div>
+    <label for="gender">Gender:</label>
+    <input type="radio" name="male" [(ngModel)]="gender" value="male">male
+    <input type="radio" name="female" [(ngModel)]="gender" value="female">female
+</div>
+<div>
+    <label for="address">Address:</label>
+    
+    <textarea name="address" id="" cols="20" rows="3" [(ngModel)]="address"></textarea>
+</div>
+<div class="Ravi">
+    <button class="btn btn-success" (click)="addStudent()"> Add Student</button>
+</div>
+</div>
+    </div>
+
+<div class="studentList">
+    <div class="formdetails"><h6>Form Details</h6></div>
+    <div class="userdetails">
+        <table class="userdetails">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>address</th>
+                <th>Action</th>
+            </tr>
+            
+            
+            <tr *ngFor="let student of studentsList"> 
+              <td>{{student.id}}</td>
+              <td>{{student.name}}</td>
+              <td>{{student.phone}}</td>
+              <td>{{student.gender}}</td>
+              <td>{{student.address}}</td>
+              
+              <td>
+                <button class="btn btn-danger" (click)="delete(student)">Delete</button>
+            </td>
+            </tr>
+           
+        </table>
+
+    </div>
+</div>

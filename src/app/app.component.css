@@ -1,0 +1,94 @@
+nav {
+    background-color: #282A35;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 30px;
+    position: relative;
+    top: 10px;
+}
+
+a:hover {
+    background-color: black;
+    color: blue;
+}
+
+.active {
+   
+    color: white;
+    border-bottom: 5px solid yellow;
+}
+
+.footer {
+    background-color: #282A35;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    padding: 8px;
+    display: flex;
+}
+
+.cart-icon {
+    height: 45px;
+    width: 45px;
+    float: right;
+    border: 1px solid white;
+    background-color: lime;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: -1px;
+    border: none;
+    padding: 8px;
+    left: 30px;
+    color: green;
+}
+
+.cart-count {
+    height: 30px;
+    width: 30px;
+    float: right;
+    border: 1px solid white;
+    background-color: yellow;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: -8px;
+    left: -35px;
+    z-index: 2;
+    border: none;
+    padding: 3px;
+    color: red;
+}
+
+.productDetails {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 20px;
+}
+
+.title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description {
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

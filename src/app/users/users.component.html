@@ -1,0 +1,16 @@
+<div class="mainusers">
+
+    <div class="userDetails" *ngFor="let user of users">
+
+
+        <p><b>id:</b> {{user.id}} </p>
+        <p><b>email:</b> {{user.email}}</p>
+        <p><b>username:</b> {{user.username}}</p>
+        <p><b>password:</b> {{user.password}}</p>
+        <p><b>phone:</b> {{user.phone}}</p>
+        <button type="button" class="btn btn-primary"(click)="addToCart(users)">Add To Cart</button>
+        <span class="color-bg"><button style="color: white" type="button" class="btn bg-primary">Show</button></span>
+        
+    </div>
+    
+</div>

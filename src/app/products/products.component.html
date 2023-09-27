@@ -1,0 +1,15 @@
+<div class="mainProduct">
+
+    <div class="productDetails" *ngFor="let prod of products">
+        <img width="100" height="100" src="{{prod.image}}" alt="">
+        <div class="child">
+        <p class="title" title="{{prod.title}}">{{prod.title}}</p>
+        <p><b>$ {{prod.price}}</b></p>
+        <p>Rating <button class="btn btn-primary">{{prod.rating.rate}}</button> Rated<b> {{prod.rating.count}}</b></p>
+        <p class="description" title="{{prod.description}}"><b>Description:</b>{{prod.description}}</p>
+        <button style="color:white" type="button" class="btn bg-primary" (click)="addToCart(prod)" >Add to Cart</button>
+        <span class="color-bg"><button style="color: white" type="button" class="btn bg-primary">Buy now</button></span>
+        </div>
+    </div>
+
+</div>

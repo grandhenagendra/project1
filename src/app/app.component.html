@@ -1,0 +1,63 @@
+<nav>
+  <a routerLink="home" routerLinkActive="active">Home</a>
+  <a routerLink="gallary" routerLinkActive="active">Gallary</a>
+  <a routerLink="users" routerLinkActive="active">Users</a>
+  <a routerLink="contact" routerLinkActive="active">Contact</a>
+  <a routerLink="products" routerLinkActive="active">products</a>
+  <a routerLink="login" routerLinkActive="active">Login</a>
+  <a routerLink="students" routerLinkActive="active">Students</a>
+  <a routerLink="user" routerLinkActive="active">User</a>
+  <a routerLink="todos" routerLinkActive="active">todos</a>
+
+
+  <span class="cart-count">{{prod.length}}</span>
+
+  <img class="cart-icon" src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png" alt="" data-bs-toggle="modal"
+    data-bs-target="#myModal">
+</nav>
+
+
+<router-outlet></router-outlet>
+
+<footer class="footer">
+  <p>Copyrights reserved @2023</p>
+</footer>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">productDetails</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="mainProduct">
+          <h6 *ngIf="prod.length == 0">Products Not Available</h6>
+          <div class="productDetails" *ngFor="let prod of prod;let i = index">
+            <img width="100" height="100" src="{{prod.image}}" alt="">
+            <div class="child">
+              <p class="title" title="{{prod.title}}">{{prod.title}}</p>
+              <p><b>$ {{prod.price}}</b></p>
+              <p>Rating <button class="btn btn-primary">{{prod.rating.rate}}</button> Rated<b> {{prod.rating.count}}</b>
+              </p>
+              <p class="description" title="{{prod.description}}"><b>Description:</b>{{prod.description}}</p>
+              <button class="btn btn-danger" (click)="delete(prod)">Delete</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Total{{total}}</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+      </div>
+
+    </div>
+  </div>

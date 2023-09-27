@@ -1,0 +1,54 @@
+.main-background{
+   background-image: linear-gradient(#66E2CC,#57AEDB,#4B88E5);
+    width:100%;
+    height:700px;
+}
+.main-content{
+    background-color:white;
+    width:25%;
+    height:350px;
+    position: relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.plus{
+    background-color:mediumorchid;
+    padding:6px 12px;
+    color:white;
+    font-size:20px;
+    text-align: center;
+    margin-left: 3px;
+}
+.enter-data{
+    background-color:#F3F1F4;
+    width:330px;
+    padding:10px;
+}
+input{
+    width: 285px;
+    height: 38px;
+    margin-top: 10px;
+}
+.enter-data{
+    margin-top:10px;
+   
+   
+}
+.content{
+ 
+   margin-left: 25px;
+}
+i{
+    float: right;
+  
+    background-color:red;
+    padding:3px 8px;
+    color:white;
+    font-size:20px;
+}
+h3{
+    font-weight: bolder;
+    
+}

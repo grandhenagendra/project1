@@ -1,0 +1,52 @@
+<div class="main">
+  <form [formGroup]="userForm" (ngSubmit)="addUser()" class="form-group">
+    <div class="Studentform">
+      <h5>Student Form</h5>
+      <div>
+        <label for="id">EmpID:</label>
+        <input type="text" name="id" formControlName="id">
+      </div>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="Enter your full name" formControlName="name">
+      </div>
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" placeholder="+91-" formControlName="phone">
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="@gmail.com" formControlName="email">
+      </div>
+      <div class="button">
+        <button class="btn btn-success" type="submit">Add Student</button>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="studentList">
+
+    <h5>Student List</h5>
+
+
+    <table>
+      <tr>
+        <th>Emp ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let user of userList; let i = index">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.email }}</td>
+
+        <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+
+      </tr>
+    </table>
+  </div>
+</div>

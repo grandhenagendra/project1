@@ -1,0 +1,49 @@
+.main{
+    padding-top:65px;
+    display: flex;
+}
+.form-group{
+    width:25%;
+    background-color: yellowgreen;
+    height:600px;
+    border-right: 8px solid yellow;
+}
+.studentList{
+    background-color: cyan;
+    width: 75%;
+    height: 600px;
+}
+h5{
+    text-align: center;
+    color: red;
+}
+label{
+    width: 90px;
+    margin: 10px;
+    color: white;
+}
+.button{
+    text-align: center;
+}
+table{
+    width: 100%;
+    
+}
+th{
+    text-align: center;
+    color: white;
+    background-color: blue;
+    height: 50px;
+}
+tr{
+    text-align: center;
+    color: white;
+    height: 50px;
+}
+tr:nth-child(even){
+    background-color: red;
+}
+tr:nth-child(odd){
+    background-color: pink;
+}
+
